@@ -1,0 +1,6 @@
+FROM kartoza/postgis
+VOLUME "/data"
+ENV POSTGRES_USER=docker
+ENV POSTGRES_PASS=docker
+ENV POSTGRES_DBNAME=gis
+EXPOSE 5432
