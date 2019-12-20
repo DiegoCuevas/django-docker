@@ -9,3 +9,9 @@ si el usuario esta logueado lo redirige a esta ruta ``http://localhost:8000/user
 “Bienvenido ``username``”  y si no esta logueado lo manda a ``http://localhost:8000/users/login``
 
 Si el usuario no tiene un cuenta puede registrarse en la siguiente ruta ``http://localhost:8000/users/register``
+
+Para levantar la primera vez el proyecto debes hacer:
+- docker-compose build
+- docker-compose up -d
+- docker-compose run web python /code/manage.py migrate 
+- docker-compose up
